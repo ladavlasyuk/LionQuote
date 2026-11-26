@@ -1,0 +1,22 @@
+<resources>
+    <string name="lion_policy">Privacy Policy</string>
+    <string name="lion_offline">Unable to reach the service</string>
+    <string name="lion_retry">Try again</string>
+    <color name="reading_window">#FFFFFF</color>
+    <color name="reading_paper">#FFFFFF</color>
+    <color name="reading_progress_tint">#000000</color>
+    <style name="ReadingTransitions" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/reading_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/reading_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/reading_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/reading_fade_out</item>
+    </style>
+
+    <style name="Theme.LionQuote.Reading" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/reading_window</item>
+        <item name="android:statusBarColor">@color/reading_window</item>
+        <item name="android:navigationBarColor">@color/reading_window</item>
+        <item name="android:windowAnimationStyle">@style/ReadingTransitions</item>
+        <item name="android:colorAccent">@color/reading_progress_tint</item>
+    </style>
+</resources>
